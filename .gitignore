@@ -1,0 +1,52 @@
+# Python & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Large Neural Model Weights (>100MB blocked by GitHub)
+# (BS-Rofo-SW-Fixed.ckpt is 700MB, download separately or host via HuggingFace/Release)
+storage/models/*.ckpt
+storage/models/*.onnx
+storage/models/*.pt
+storage/models/*.pth
+storage/models/*.bin
+storage/models/*.sf2
+
+# Keep configuration YAML files in storage/models
+!storage/models/*.yaml
+!storage/models/.gitkeep
+
+# Runtime Storage & Generated Audio
+storage/stems/*
+!storage/stems/.gitkeep
+
+storage/uploads/*
+!storage/uploads/.gitkeep
+
+storage/midi/*
+!storage/midi/.gitkeep
+
+storage/mixed_benchmark/
+storage/test_lucifer/
+storage/test_stems/
+
+# Generated Large Audio Files
+*.wav
+*.cwp
+
+# Logs & Temporary Files
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+
+# OS Specific
+Thumbs.db
+desktop.ini
+.DS_Store
